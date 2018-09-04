@@ -2,6 +2,8 @@
 
 public class KillVolume : MonoBehaviour
 {
+    
+    private int TomaPerro = -1;
     [SerializeField]
     private Shelter[] shelters;
 
@@ -9,13 +11,19 @@ public class KillVolume : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<Hazard>() != null)
         {
+            
             for (int i = 0; i < shelters.Length; i++)
             {
                 if (shelters[i] != null)
                 {
                     print("Damaging a shelter");
+                    collision.gameObject.GetComponent<Hazard>().OnHazardDestroyed();
+                    
+                    //myObject.GetComponent<MyScript>().MyFunction()
+
                 }
             }
+
         }
 
         Destroy(collision.gameObject);
