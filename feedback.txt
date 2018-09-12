@@ -1,0 +1,13 @@
+Feedback
+
+Examen (0.5/5.0)
+ * No hay implementación de APBullet, Debris o Invader.
+ * No hay implementación del tiempo de regeneración del shelter.
+ * No hay GameOver cuando el hazard traspasa la posición del jugador.
+ * El shelter se destruye debidamente cuando un hazard le ha restado toda la resistencia, pero no hay GameOver.
+ * La implementación de disparo no satisface el enunciado.
+
+Bonificación (0.5/0.5)
+ * No hay propuesta para la bonificación.
+
+Total: 0.5 / 5.0
